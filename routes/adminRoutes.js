@@ -7,4 +7,5 @@ router.post('/register', adminController.register);
 router.post('/login', adminController.login);
 router.post('/change-password', auth, adminController.changePassword);
 
+
 module.exports = router;

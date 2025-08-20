@@ -7,10 +7,7 @@ const adminRoutes = require('./routes/adminRoutes');
 const path = require('path');
 
 const app = express();
-
 connectDB();
-
-
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
