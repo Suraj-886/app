@@ -59,7 +59,7 @@ exports.createApplication = async (req, res) => {
     }
 
    
-    formData.applicationNumber = `MSME-${uuidv4()}`;
+    formData.applicationNumber = `${uuidv4()}`;
 
     const application = new Application(formData);
     await application.save();
